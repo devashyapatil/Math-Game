@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_1"
+    tools:context=".Menu">
+
+    <!-- Outer Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/outerBox"
+        android:layout_width="280dp"
+        android:layout_height="415dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#F09D46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Inner Container -->
+        <LinearLayout
+            android:id="@+id/innerBox"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/rounded_bg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/rounded_orange_button"
+                android:text="ADDITION"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/rounded_orange_button"
+                android:text="SUBTRACTION"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMulti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/rounded_orange_button"
+                android:text="MULTIPLICATION"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageMathgame"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="180dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mathgame"
+        app:layout_constraintBottom_toTopOf="@+id/outerBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

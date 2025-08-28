@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2"
+    tools:context=".AddGame">
+
+    <!-- Outer Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/outerBox"
+        android:layout_width="380dp"
+        android:layout_height="650dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#F09D46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Inner Container -->
+
+        <LinearLayout
+            android:id="@+id/innerBox"
+            android:layout_width="340dp"
+            android:layout_height="610dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_bg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck">
+
+
+            <TextView
+                android:id="@+id/textViewgameover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#E00D0D"
+                android:gravity="center"
+                android:text="GameOver"
+                android:textColor="#F60707"
+                android:textSize="70sp"
+                android:textStyle="bold|italic"
+                tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#794713">
+
+                <TextView
+                    android:id="@+id/textYourscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Your Score"
+                    android:textColor="#FFD740"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textViewTime"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="90dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:text="0"-->
+                <!--                    android:textColor="#FFD740"-->
+                <!--                    android:textSize="24sp"-->
+                <!--                    android:textStyle="bold"/>-->
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#794713">
+
+                <TextView
+                    android:id="@+id/textViewResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#FFD740"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonExit"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_redripple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="EXIT"
+                    android:textStyle="bold"
+                    app:cornerRadius="20sp"
+                    tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonplayagain"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:text="PLAY AGAIN"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_greenripple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="ButtonStyle,HardcodedText,TextContrastCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
